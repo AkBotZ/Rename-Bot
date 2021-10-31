@@ -223,6 +223,7 @@ async def rename_handler(c: Client, m: Message):
                     raw.types.DocumentAttributeFilename(file_name=file_name)
                 ]
             )
+            print(media)
         else:
             return await editable.edit("I can't rename it!")
 
